@@ -1,0 +1,22 @@
+<%- include('../partials/header') %>
+
+<main class="main main-single">
+    <div class="container">
+        <section class="section section-single">
+            <div class="row">
+                <div class="col-md-">
+                    <img src="<%= beer.image %>" alt="<%= beer.name %>" class="img-fluid w-20">
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item"><%= beer.name %></li>
+                        <li class="list-group-item"> Price:<%= beer.price %></li>
+                        <li class="list-group-item"> Rating: <%= beer.rating.average %> | Reviews: <%= beer.rating.reviews %></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<%- include('../partials/footer') %>

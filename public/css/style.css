@@ -1,0 +1,27 @@
+* {box-sizing: border-box;}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.section-stout {
+    margin: 20px 0;
+    padding: 20px 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+header {
+    padding: 20px 0;
+}
+
+.header-h1{ 
+    text-align: center;
+    padding-left: 50px;
+}
+
+.beer-figure {
+    margin: 20px 0;
+    padding: 20px 0;
+}
