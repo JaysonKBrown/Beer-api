@@ -25,3 +25,7 @@ header {
     margin: 20px 0;
     padding: 20px 0;
 }
+
+.row1, .row2 {
+    padding: 40px 0;
+}

@@ -3,6 +3,19 @@
 <main class="main main-single">
     <div class="container">
         <section class="section section-single">
+            <!-- prev and next -->
+            <div class="prev-and-next d-flex justify-content-around">
+                <p class="prev">
+                    <% if(beer.id > 1) { %>
+                        <a href="/<%= brew %>/<%= beer.id - 1 %>">Prev</a>
+                    <% } %>
+                </p>
+                <p class="next">
+                    <% if(beer.id <= count) { %>
+                        <a href="/<%= brew %>/<%= beer.id + 1 %>">Next</a>
+                    <% } %>
+                </p>
+            </div>
             <div class="row">
                 <div class="col-md-">
                     <img src="<%= beer.image %>" alt="<%= beer.name %>" class="img-fluid w-20">
