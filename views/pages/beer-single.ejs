@@ -11,7 +11,7 @@
                     <% } %>
                 </p>
                 <p class="next">
-                    <% if(beer.id <= count) { %>
+                    <% if(beer.id < count) { %>
                         <a href="/<%= brew %>/<%= beer.id + 1 %>">Next</a>
                     <% } %>
                 </p>
